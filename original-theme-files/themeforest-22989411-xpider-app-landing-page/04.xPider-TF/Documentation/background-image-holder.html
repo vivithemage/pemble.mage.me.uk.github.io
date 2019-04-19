@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xPider - Background Image Holder</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color.png" alt="brand-logo"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="language-selector.html" class="nav-link">Language Selector</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="social-icon-list.html" class="nav-link">Social Icon List</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="xPider-template-options.html" class="nav-link">xPider template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1 pl-lg-60">
+                        <!-- Getting started -->
+                        <div class="content-title mb-30 pb-30 border-bottom">
+                            <h1 class="h3-font mb-10">Background Image Holder</h1>
+                            <p class="lead font-w-400">To update the background easily we have created a javascript function which
+                                will help you to update/ add background images directly from the HTML. It mean's you
+                                won't need to modify the CSS anymore.</p>
+                        </div>
+                        <div class="position-relative mb-60" style="height:400px;">
+                            <div class="background-holder">
+                                <img src="img/hero-11-dark.png" alt="oval" class="background-image-holder">
+                            </div>
+                        </div>
+                        <!-- end of example image -->
+                        <div class="mb-60">
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;div class=&quot;position-relative&quot;&gt;
+                                        &lt;div class=&quot;background-holder&quot;&gt;
+                                            &lt;img src=&quot;img/hero-11-dark.png&quot; alt=&quot;oval&quot; class=&quot;background-image-holder&quot;&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="card bg-color-grey mb-60">
+                            <div class="card-body">
+                                <h6 class="title-decorative">Additional Class Reference</h6>
+                                <hr>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--cover</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges</dd>
+                                </dl>
+                                <!-- end of item -->
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--contain</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to resize the background image to make sure the image is fully visible</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--auto</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to see the image in original size</dd>
+                                </dl>
+
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--center</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to center the image of the container</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--bottom</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the bottom of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--left</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the left  of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--top</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the top  of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--left-top</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the top left corner of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--right-top</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the top right corner of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--left-bottom</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the left bottom corner of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.background-holder--right-bottom</code>
+            </dt>
+                                    <dd class="col-8">Apply to <code>.background-holder</code> to set the image from the right bottom corner of the element</dd>
+                                </dl>
+                                <!-- end of item -->
+
+                            </div>
+                        </div>
+                        <div class="mb-60">
+                           <p> Note: The default image postion is <strong>center</strong> and the <strong>background-size</strong> is <strong>cover</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

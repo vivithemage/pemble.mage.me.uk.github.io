@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xPider - Template Options</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color.png" alt="brand-logo"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="language-selector.html" class="nav-link">Language Selector</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="social-icon-list.html" class="nav-link">Social Icon List</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="xPider-template-options.html" class="nav-link">xPider template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1 pl-lg-60">
+                        <!-- Getting started -->
+                        <div class="content-title mb-30 pb-30 border-bottom">
+                            <h1 class="h3-font mb-10">Template Options</h1>
+                            <p class="lead font-w-400 mb-30">xPider comes with couples of pre-made template options
+                                such as: pre-made color as solid and gradient, boxed layout and patterns. They are very
+                                issue to apply in template</p>
+                        </div>
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">RTL (left to Right) Mode</h3>
+                            <p>It is super easy to transform the site to RTL to LTR or LTR to RTL. Simple update the property of <code>$dir</code> variable from <code>scss/5-user/_direction.scss</code>. On the otherhand, we have also included a separate package of RTL version with the ThemeForest main file. </p>
+                            <h4 class="mt-20 h6-font">Code Example</h4>
+                            <div class="mb-60">
+                                <div class="highlight">
+                                    <pre><code class="language-scss" data-lang="scss">
+                                            $dir: rtl;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Solid color as template primary color</h3>
+                            <p>add xPider pre-defined class to the <code>&lt;body&gt;</code> elements to apply the
+                                theme.</p>
+
+                            <h4 class="mt-20 h6-font">Code Example</h4>
+                            <div class="mb-60">
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;body class=&quot;theme-green&quot;&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Gradient color as template primary color</h3>
+                            <p>add xPider pre-defined class to the <code>&lt;body&gt;</code> elements to apply the
+                                theme.</p>
+
+                            <h4 class="mt-20 h6-font">Code Example</h4>
+                            <div class="mb-60">
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;body class=&quot;gradient-1&quot;&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end of group -->
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Change page layout to Boxed Layout</h3>
+                            <p>add xPider pre-defined class to the <code>&lt;body&gt;</code> elements to apply the
+                                theme.</p>
+
+                            <h4 class="mt-20 h6-font">Code Example</h4>
+                            <div class="mb-60">
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                            &lt;body class=&quot;boxed-layout&quot;&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Boxed Layout with Pattern</h3>
+                            <p>add xPider pre-defined class to the <code>&lt;body&gt;</code> elements to apply the
+                                theme.</p>
+
+                            <h4 class="mt-20 h6-font">Code Example</h4>
+                            <div class="mb-60">
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;body class=&quot;theme-green boxed-layout circles-light&quot;&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div>
+                            <h3 class="pb-20 h4-font">CSS Class Reference</h3>
+                            <div class="card bg-color-grey mb-60">
+                                <div class="card-body">
+                                    <div class="mb-30">
+                                        <h6 class="title-decorative">Solid Color Option</h6>
+                                        <p class="mb-2">You can apply either solid color or gradient color at a time.
+                                            Gradient and Solid color won't work at the same time.</p>
+                                        <p>More information avilable in the <a href="customization.html">customization</a>
+                                            page</p>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.theme-green</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.theme-violet</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.theme-firoza</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.theme-red</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.theme-orange</code></dt>
+                                        </dl>
+
+                                        <hr>
+
+                                        <h6 class="title-decorative">Gradient Color Option</h6>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-1</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-2</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-3</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-4</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-5</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.gradient-6</code></dt>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-color-grey mb-60">
+                                <div class="card-body">
+                                    <div class="mb-30">
+                                        <h6 class="title-decorative">Pattern Options</h6>
+                                        <p>You must have to set layut as <code>boxed-layout</code> to apply the pattern</p>
+                                        <hr>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.swirl-pattern</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.circle-pattern</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.x-pattern</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.leaf-pattern</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.tic-tac-toe</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.circles-light</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.spiration-light</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.round-pattern</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.dark-angles</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.memphis-colorful</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.spiration-dark</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.curls</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.darkness</code></dt>
+                                        </dl>
+                                        <dl class="row justfiy-content-between">
+                                            <dt class="col-4"><code>.zig-zag-wool</code></dt>
+                                        </dl>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

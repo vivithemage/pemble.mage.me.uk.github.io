@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xPider - Button</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color.png" alt="brand-logo"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="language-selector.html" class="nav-link">Language Selector</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="social-icon-list.html" class="nav-link">Social Icon List</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="xPider-template-options.html" class="nav-link">xPider template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1 pl-lg-60">
+                        <!-- Getting started -->
+                        <div class="content-title mb-30 pb-30 border-bottom">
+                            <h1>Buttons</h1>
+                            <p class="lead mb-20">Use our custom button styles for actions in forms, dialogs, and more with
+                                support for multiple sizes, states, and more. </p>
+                            <a href="http://getbootstrap.com/docs/4.1/components/buttons" class="btn-text-hover" target="_blank">Open
+                                Bootstrap Docs</a>
+                        </div>
+
+                        <div class="mb-60">
+                            <h3 class="pb-20">Example</h3>
+                            <div class="card p-4">
+
+                                <div class="button-group">
+                                    <a href="#" class="btn btn--bg-primary"><span class="btn__text">Default</span></a>
+                                    <a href="#" class="btn btn--bg-primary rounded-full"><span class="btn__text">Rounded</span></a>
+                                </div>
+                            </div>
+
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--bg-primary&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Default&lt;/span&gt;&lt;/a&gt;
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--bg-primary rounded-full&quot;&gt;&lt;span class=&quot;btn__text&quot;&gt;Rounded&lt;/span&gt;&lt;/a&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="mb-60">
+                            <div class="mb-30">
+                                <h3 class="pb-20">xPider Buttons </h3>
+                                <div class="card p-4">
+                                    <div>
+                                        <a href="#" class="mr-30 btn btn--bg-primary">
+                                            <span class="btn__text">Button Primary</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--sm btn--bg-primary">
+                                            <span class="btn__text">Button Small</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--outline">
+                                            <span class="btn__text">Button Outline</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--outline-thick">
+                                            <span class="btn__text">Button Outline Thick</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--bg-white btn--color-primary">
+                                            <span class="btn__text">Button BG White</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href="#" class="mr-30 btn btn--color-coral">
+                                            <span class="btn__text">Button Color Coral </span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--underline btn--color-grey">
+                                            <span class="btn__text">Button underline </span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--underline btn--color-dark">
+                                            <span class="btn__text mr-10">Button Underline with Arrow </span>
+                                            <i class="fa fa-caret-right"></i>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--transparent p-0 btn--arrow-after btn--color-dark">
+                                            <span class="btn__text mr-30">Button Arrow</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                        &lt;a href=&quot;#&quot; class=&quot;btn btn--bg-primary&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Primary&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--sm btn--bg-primary&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Primary&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--outline&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Outline&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--outline-thick&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Outline Thick&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--bg-white btn--color-primary&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button BG White&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--color-coral&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Color Coral &lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--underline btn--color-grey&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button underline &lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--underline btn--color-dark&quot;&gt;
+                                        &lt;span class=&quot;btn__text mr-10&quot;&gt;Button Underline with Arrow &lt;/span&gt;
+                                        &lt;i class=&quot;fa fa-caret-right&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;btn btn--transparent p-0 btn--arrow-after btn--color-dark&quot;&gt;
+                                        &lt;span class=&quot;btn__text mr-30&quot;&gt;Button Arrow&lt;/span&gt;
+                                    &lt;/a&gt;
+    
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-60">
+                            <div class="mb-40">
+                                <h3 class="pb-20">xPider Buttons Hover</h3>
+                                <div class="card p-4">
+                                    <div>
+                                        <a href="#" class="mr-30 btn btn--outline btn--bg-white btn-3d-hover">
+                                            <span class="btn__text">Button 3D Hover</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--bg-primary btn-splash-hover">
+                                            <span class="btn__text">Button Splash Hover</span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--bg-primary btn-3d-hover btn-splash-hover">
+                                            <span class="btn__text">Button 3D and Splash Hover</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href="#" class="mr-30 btn btn--underline btn--color-grey btn-text-hover">
+                                            <span class="btn__text">Button Text Hover </span>
+                                        </a>
+                                        <a href="#" class="mr-30 btn btn--transparent p-0 btn--arrow-after btn--color-dark btn-border-hover">
+                                            <span class="btn__text mr-30">Button Border Hover</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                        &lt;a href=&quot;#&quot; class=&quot;mr-30 btn btn--outline btn--bg-white btn-3d-hover&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button 3D Hover&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;mr-30 btn btn--bg-primary btn-splash-hover&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Splash Hover&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;mr-30 btn btn--bg-primary btn-3d-hover btn-splash-hover&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button 3D and Splash Hover&lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;mr-30 btn btn--underline btn--color-grey btn-text-hover&quot;&gt;
+                                        &lt;span class=&quot;btn__text&quot;&gt;Button Text Hover &lt;/span&gt;
+                                    &lt;/a&gt;
+
+                                    &lt;a href=&quot;#&quot; class=&quot;mr-30 btn btn--transparent p-0 btn--arrow-after btn--color-dark btn-border-hover&quot;&gt;
+                                        &lt;span class=&quot;btn__text mr-30&quot;&gt;Button Border Hover&lt;/span&gt;
+                                    &lt;/a&gt;    
+    
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+                        <div class="card bg-color-grey mb-60">
+                            <div class="card-body">
+                                <h6 class="title-decorative">Class Reference</h6>
+                                <hr>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--sm</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--transparent</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--bg-primary</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--bg-white</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--color-primary</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--color-dark</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--color-white</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--color-grey</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--color-coral</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--outline</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--outline-thick</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--underline</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn--arrow-after</code>
+                                </dl>
+                                <h6 class="title-decorative">Hover Effect</h6>
+                                <hr>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn-3d-hover</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn-splash-hover</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn-border-hover</code>
+                                </dl>
+                                <dl class="row justfiy-content-between">
+                                    <dt class="col-4"><code>.btn-text-hover</code>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <!-- enf of group -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

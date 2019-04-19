@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xPider - Gulp</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color.png" alt="brand-logo"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="language-selector.html" class="nav-link">Language Selector</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="social-icon-list.html" class="nav-link">Social Icon List</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="xPider-template-options.html" class="nav-link">xPider template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1 pl-lg-60">
+                        <!-- Getting started -->
+                        <div class="content-title mb-30 pb-30 border-bottom">
+                            <h1 class="pb-20 h3-font">Gulp</h1>
+                            <p class="lead font-w-400">Automate painful or time-consuming tasks in your development workflow, so you can stop messing around and build something using Gulp.</p>
+                        </div>
+                        <div class="mb-50">
+                            <h3 class="pb-20 h4-font">Requirements </h3>
+                            <p class="mb-30">In order to use Gulp you will need to download Node JS. If you do not have Node installed already, you can get it by downloading the package installer from the official website. Please download the stable version of Node.js (LTS).</p>
+                            <a class="btn btn--bg-primary btn-3d-hover btn-splash-hover" href="https://nodejs.org/en/" target="_blank">Download Node JS</a>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-30">
+                            <h3 class="pb-20 h4-font">Installation</h3>
+
+                            <p>After Node is installed on your system you can now proceed to Gulp installation. To do that simply run the following command in your terminal. This will install Gulp globally. Aferwards you can cd to you project’s folder where xPider is installed.</p>
+                            <code>npm install gulp-cli -g</code>
+
+                            <br>
+                            <br>
+
+                            <p>Once the path of your workflow is changed to your project’s folder, where xPider is installed, we have to install all the packages needed in order for Gulp to run correctly:</p>
+                            <code>npm install</code>
+                            <br>
+                            <br>
+
+                            <p>Now everything is installed and ready to work for you.</p>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-20">
+                            <h3 class="pb-20 h4-font">Running Gulp</h3>
+
+                            <p>For development we set a Gulp command that will compile the sources to dist then start a local Browsersync instance on port 3000 to serve and auto-refresh your pages as you edit.</p>
+                            <code>gulp watch</code>
+                            <br>
+                            <br>
+
+                            <p>For production we set a Gulp command that will compile and minify the CSS and JS files ready to be included in your project</p>
+                            <code>gulp prod</code>
+                        </div>
+                        <!-- end of group -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xPider - Form</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+    <!-- =========== Start of Sidebar ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-logo-holder">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar-brand">
+                <a href="index.html"><img src="img/brand-logo-color.png" alt="brand-logo"></a>
+            </div>
+        </div>
+        <div class="sidebar-inner">
+            <div class="navbar-wrapper">
+                <div class="sidebar-nav">
+                    <ul class="navigation">
+                        <li class="nav-title">Getting started</li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+                        <li class="nav-item"><a href="file-structure.html" class="nav-link">File structures</a></li>
+                        <li class="nav-item"><a href="gulp.html" class="nav-link">Gulp</a></li>
+                        <li class="nav-item"><a href="bem.html" class="nav-link">BEM Naming Convention</a></li>
+                        <li class="nav-item"><a href="customization.html" class="nav-link">Customization</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Update</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Components</li>
+                        <li class="nav-item"><a href="background-image-holder.html" class="nav-link">Background Holder</a></li>
+                        <li class="nav-item"><a href="buttons.html" class="nav-link">Buttons</a></li>
+                        <li class="nav-item"><a href="cards.html" class="nav-link">Cards</a></li>
+                        <li class="nav-item"><a href="countdown.html" class="nav-link">Countdown</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+                        <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+                        <li class="nav-item"><a href="language-selector.html" class="nav-link">Language Selector</a></li>
+                        <li class="nav-item"><a href="media-player.html" class="nav-link">Media Player</a></li>
+                        <li class="nav-item"><a href="reveal.html" class="nav-link">Reveal Animation</a></li>
+                        <li class="nav-item"><a href="social-icon-list.html" class="nav-link">Social Icon List</a></li>
+                    </ul>
+                    <ul class="navigation">
+                        <li class="nav-title">Utilities</li>
+                        <li class="nav-item"><a href="helpers.html" class="nav-link">Helpers</a></li>
+                        <li class="nav-item"><a href="spacing.html" class="nav-link">Spacing</a></li>
+                        <li class="nav-item"><a href="xPider-template-options.html" class="nav-link">xPider template
+                                options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- =========== End of Sidebar ============ -->
+    <main class="main documentation">
+
+        <!-- =========== Start of Body Content ============ -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 order-xl-1 pl-lg-60">
+                        <!-- Getting started -->
+                        <div class="content-title mb-30 pb-30 border-bottom">
+                            <h1 class="h3-font mb-10">Form elements</h1>
+                            <p class="lead font-w-400 mb-30">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+                            <a class="btn-text-hover" href="http://getbootstrap.com/docs/4.1/components/forms" target="_blank">Open Bootstrap Docs</a>
+                        </div>
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Default</h3>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="phone" placeholder="Default Input">
+                            </div>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;form-group&quot;&gt;
+                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;phone&quot; placeholder=&quot;Default Input&quot;&gt;
+                                    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Less Height</h3>
+                            <div class="form-group form--sm">
+                                <input type="text" class="form-control" id="phone2" placeholder="Default Input">
+                            </div>
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                        &lt;div class=&quot;form-group form--sm&quot;&gt;
+                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;phone&quot; placeholder=&quot;Default Input&quot;&gt;
+                                    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Newsletter form</h3>
+                            <div class="bg-color-primary py-5">
+                                <div class="col-12 col-lg-6 text-center mx-auto">
+                                    <div class="position-relative text-center">
+                                        <form action="#" class="form form-subscription">
+                                            <div class="form-row">
+                                                <div class="form-group col-sm-12">
+                                                    <div class="input-group mb-3 mb-sm-0">
+                                                        <input type="email" class="form-control" placeholder="Enter your email to start" aria-label="Recipient's username">
+                                                    </div>
+                                                    <button class="btn btn--submit btn--color-primary btn--bg-white" type="submit">
+                                                        <span class="btn__text">Get started</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                            </div>
+                            <!-- end of row -->
+                            <div class="highlight">
+                                <pre><code class="language-html" data-lang="html">
+                                    &lt;form action=&quot;#&quot; class=&quot;form form-subscription&quot;&gt;
+                                        &lt;div class=&quot;form-row&quot;&gt;
+                                            &lt;div class=&quot;form-group col-sm-12&quot;&gt;
+                                                &lt;div class=&quot;input-group mb-3 mb-sm-0&quot;&gt;
+                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your email to start&quot; aria-label=&quot;Recipient&apos;s username&quot;&gt;
+                                                &lt;/div&gt;
+                                                &lt;button class=&quot;btn btn--submit btn--color-primary btn--bg-white&quot; type=&quot;submit&quot;&gt;
+                                                    &lt;span class=&quot;btn__text&quot;&gt;Get started&lt;/span&gt;
+                                                &lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/form&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                        <!-- end of group -->
+
+                        <div class="mb-60">
+                            <h3 class="pb-20 h4-font">Contact form</h3>
+                            <div class="py-5">
+                                <div class="col-12 col-lg-8">
+                                    <form class="form form--sm">
+                                        <div class="form-row mb-20">
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label class="label-control mb-10" for="name">Your Name*</label>
+                                                <input type="text" class="form-control" id="name" placeholder="i.e. John Doe" required>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label class="label-control mb-10" for="phone">Your Phone Number</label>
+                                                <input type="text" class="form-control" id="phone" placeholder="+(123)123 456">
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-20">
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label class="label-control mb-10" for="email">Email address*</label>
+                                                <input type="email" class="form-control" id="email" placeholder="i.e. example@example.com" required>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label class="label-control mb-10" for="subject">Subject*</label>
+                                                <input type="text" class="form-control" id="subject" placeholder="i.e. Webdesign" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row mb-20">
+                                            <div class="form-group col-sm-12">
+                                                <label class="label-control mb-10" for="message">Your Message</label>
+                                                <textarea class="form-control" id="message" rows="4" placeholder="i.e. The design is...." required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12 text-center">
+                                                <button type="submit" class="btn btn--bg-primary btn-splash-hover btn-3d-hover">
+                                                    <span class="btn__text">Submit</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- end of col -->
+                                </div>
+                                <!-- end of row -->
+                                <div class="highlight">
+                                    <pre><code class="language-html" data-lang="html">
+                                        &lt;form class=&quot;form form--sm&quot;&gt;
+                                        &lt;div class=&quot;form-row mb-20&quot;&gt;
+                                            &lt;div class=&quot;form-group col-sm-12 col-md-6&quot;&gt;
+                                                &lt;label class=&quot;label-control mb-10&quot; for=&quot;name&quot;&gt;Your Name*&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;i.e. John Doe&quot; required&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group col-sm-12 col-md-6&quot;&gt;
+                                                &lt;label class=&quot;label-control mb-10&quot; for=&quot;phone&quot;&gt;Your Phone Number&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;phone&quot; placeholder=&quot;+(123)123 456&quot;&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-row mb-20&quot;&gt;
+                                            &lt;div class=&quot;form-group col-sm-12 col-md-6&quot;&gt;
+                                                &lt;label class=&quot;label-control mb-10&quot; for=&quot;email&quot;&gt;Email address*&lt;/label&gt;
+                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;i.e. example@example.com&quot; required&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;form-group col-sm-12 col-md-6&quot;&gt;
+                                                &lt;label class=&quot;label-control mb-10&quot; for=&quot;subject&quot;&gt;Subject*&lt;/label&gt;
+                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;subject&quot; placeholder=&quot;i.e. Webdesign&quot; required&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-row mb-20&quot;&gt;
+                                            &lt;div class=&quot;form-group col-sm-12&quot;&gt;
+                                                &lt;label class=&quot;label-control mb-10&quot; for=&quot;message&quot;&gt;Your Message&lt;/label&gt;
+                                                &lt;textarea class=&quot;form-control&quot; id=&quot;message&quot; rows=&quot;4&quot; placeholder=&quot;i.e. The design is....&quot; required&gt;&lt;/textarea&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class=&quot;form-row&quot;&gt;
+                                            &lt;div class=&quot;form-group col-sm-12 text-center&quot;&gt;
+                                                &lt;button type=&quot;submit&quot; class=&quot;btn btn--bg-primary btn-splash-hover btn-3d-hover&quot;&gt;
+                                                    &lt;span class=&quot;btn__text&quot;&gt;Submit&lt;/span&gt;
+                                                &lt;/button&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/form&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                            <!-- end of group -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of Body Content ============ -->
+    </main>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
